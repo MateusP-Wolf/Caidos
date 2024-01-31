@@ -1,3 +1,33 @@
+@font-face {
+    font-family: 'textoGeral';
+    src: url(/fontes/Raleway-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nomeEmpresa';
+    src: url(/fontes/Ailerons-TrialVersion.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'assinaturas';
+    src: url(/fontes/Caveat-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'textoGeral';
+}
+
+#titulo{
+    font-family: 'nomeEmpresa';
+}
+
+
 #background {
     position: fixed;
     top: 50%;
