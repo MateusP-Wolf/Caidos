@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(108, 108, 46);
+}
+
+#header{
+    background-color: #252525;
+    text-align: center;
+    padding: 5px;
+}
+
+#imgTopo{
+    width: 165px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+#containerPrincipal{
+    background-color: #252525;
+    color: whitesmoke;
+    margin-top: 135px;
+    margin-bottom: 135px;
+    padding: 30px;
+}
+
+#enviarCurriculo {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#footer {
+    padding-top: 5px;
+}
+
+#background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+}

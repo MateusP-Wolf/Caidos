@@ -1,11 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalhe Conosco - Caídos</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/Caidos/css/estiloTrabalheConosco.css">
+    <link rel="stylesheet" href="/Caidos/css/estiloGeral.css">
+    <!-- Script -->
+    <script src="/Caidos/scripts/scriptTrabalheConosco.js"></script>
+    <!-- Animações -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Icone -->
+    <link rel="icon" href="/Caidos/static/imgs/icone-caídos.ico" type="image/x-icon">
 </head>
+
 <body>
-    <a href="/Caidos/index.html">Voltar</a>
+    <!-- Header -->
+    <div id="header">
+        <div id="conteudoDoContainer">
+            <h1 id="titulo">TRABALHE CONOSCO</h1>
+            <a href="/Caidos/index.html"><img id="imgTopo" src="/Caidos/static/imgs/icone-caídos.ico">
+        </div></a>
+    </div>
+
+    <!-- Video -->
+    <video id="background" autoplay loop muted>
+        <source src="/Caidos/static/videos/salaDeReuniões.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+    </video>
+
+    <!-- Container -->
+    <div id="containerPrincipal">
+        <form id="meuFormulario" onsubmit="enviarFormulario()">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Nome</label>
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="Nome" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPais">País</label>
+                <input type="text" class="form-control" id="inputPais" placeholder="Armorre, Ahrback, Perth..." required>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Endereço</label>
+                <input type="text" class="form-control" id="inputAddress" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">Cidade</label>
+                    <input type="text" class="form-control" id="inputCity" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputTelefone">Telefone / Celular</label>
+                    <input type="number" class="form-control" id="inputTelefone" placeholder="DDD de País e de Estado" required>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputNasc">Nascimento</label>
+                    <input type="date" class="form-control" id="inputNasc" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                </div>
+            </div>
+            <div class="form-group" id="enviarCurriculo">
+                <label for="exampleFormControlFile1">Envia seu currículo aqui:</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+            <button type="submit" class="btn btn-light" id="enviarBotao">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Mensagem -->
+    <div id="mensagens" style="display: none;">
+        <!-- Mensagens aparecerão aqui após o envio -->
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center text-lg-start" id="footer">
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Redes Sociais
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Telegram</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Instagram</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">X</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Facebook</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Sobre Nós</h6>
+                        <p>
+                            <a href="/Caidos/pages/trabalheConosco.html" class="text-reset">Trabalhe Conosco</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Investidores</a>
+                        <p>
+                            <a href="#!" class="text-reset">Nos Contrate!</a>
+                        </p>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Nossa Equipe</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.223);">
+            © 2122 Copyright
+        </div>
+        <!-- Copyright -->
+    </footer>
+
 </body>
+
 </html>
