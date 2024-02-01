@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(108, 108, 46);
+    background-color: rgb(255, 255, 255);
 }
 
 #header{
@@ -19,7 +19,7 @@ body{
     color: whitesmoke;
     margin-top: 135px;
     margin-bottom: 135px;
-    padding: 30px;
+    padding: 50px;
 }
 
 #enviarCurriculo {
@@ -42,3 +42,4 @@ body{
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
 }
+

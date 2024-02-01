@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Icone -->
     <link rel="icon" href="/Caidos/static/imgs/icone-caídos.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
 </head>
 
 <body>
@@ -36,6 +38,7 @@
 
     <!-- Container -->
     <div id="containerPrincipal">
+        <!-- Formulario -->
         <form id="meuFormulario" onsubmit="enviarFormulario()">
             <div class="form-row">
                 <div class="form-group col-md-6">
@@ -49,7 +52,8 @@
             </div>
             <div class="form-group">
                 <label for="inputPais">País</label>
-                <input type="text" class="form-control" id="inputPais" placeholder="Armorre, Ahrback, Perth..." required>
+                <input type="text" class="form-control" id="inputPais" placeholder="Armorre, Ahrback, Perth..."
+                    required>
             </div>
             <div class="form-group">
                 <label for="inputAddress">Endereço</label>
@@ -62,7 +66,8 @@
                 </div>
                 <div class="form-group col-md-4">
                     <label for="inputTelefone">Telefone / Celular</label>
-                    <input type="number" class="form-control" id="inputTelefone" placeholder="DDD de País e de Estado" required>
+                    <input type="number" class="form-control" id="inputTelefone" placeholder="DDD de País e de Estado"
+                        required>
                 </div>
                 <div class="form-group col-md-2">
                     <label for="inputNasc">Nascimento</label>
@@ -80,12 +85,6 @@
             <button type="submit" class="btn btn-light" id="enviarBotao">Enviar</button>
         </form>
     </div>
-
-    <!-- Mensagem -->
-    <div id="mensagens" style="display: none;">
-        <!-- Mensagens aparecerão aqui após o envio -->
-    </div>
-
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center text-lg-start" id="footer">
