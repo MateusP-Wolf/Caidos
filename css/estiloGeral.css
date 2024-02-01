@@ -1,28 +1,9 @@
-@font-face {
-    font-family: 'textoGeral';
-    src: url(/fontes/Raleway-VariableFont_wght.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'nomeEmpresa';
-    src: url(/fontes/Ailerons-TrialVersion.otf);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'assinaturas';
-    src: url(/fontes/Caveat-VariableFont_wght.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Playfair+Display&display=swap');
 
 * {
-    font-family: 'textoGeral';
+    font-family: 'Kanit', sans-serif;
 }
 
 #titulo{
-    font-family: 'nomeEmpresa';
+    font-family: 'Playfair Display', serif;
 }
