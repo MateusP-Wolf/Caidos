@@ -12,7 +12,7 @@
 }
 
 #investidoresContainer{
-    margin-top: 130px;
+    margin-top: 110px;
     background-color: #252525;
     color: whitesmoke;
     text-align: center;
@@ -112,3 +112,26 @@
     background-color: rgb(76, 76, 76);
     padding: 15px;  
   }
+
+  .img-Investidores {
+    width: 250px; /* Ajuste conforme necessário */
+    height: 250px; /* Ajuste conforme necessário */
+    object-fit: cover; /* Garante que a imagem cubra completamente o contêiner mantendo as proporções */
+    border-radius: 50%; /* Transforma a imagem em um círculo */
+}
+
+#footer{
+    margin-top: 125px;
+}
+
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+}
