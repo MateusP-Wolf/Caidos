@@ -61,21 +61,21 @@
 }
 
 #item1{
-    background-image: url(/static/imgs/guardaCasamento.jpg);
+    background-image: url(/Caidos/static/imgs/guardaCasamento.jpg);
     height: 500px;
     background-size: cover; /* Faz com que a imagem cubra todo o corpo da página */
     background-position: center; /* Centraliza a imagem no corpo da página */
 }
 
 #item2{
-    background-image: url(/static/imgs/guardaRonda.jpg);
+    background-image: url(/Caidos/static/imgs/guardaRonda.jpg);
     height: 500px;
     background-size: cover; /* Faz com que a imagem cubra todo o corpo da página */
     background-position: center; /* Centraliza a imagem no corpo da página */
 }
 
 #item3{
-    background-image: url(/static/imgs/guardaCondominio.jpg);
+    background-image: url(/Caidos/static/imgs/guardaCondominio.jpg);
     height: 500px;
     background-size: cover; /* Faz com que a imagem cubra todo o corpo da página */
     background-position: center; /* Centraliza a imagem no corpo da página */
