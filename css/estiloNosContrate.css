@@ -1,0 +1,116 @@
+#header{
+    background-color: #252525;
+    text-align: center;
+    padding: 5px;
+}
+
+#titulo{
+    text-align: center;
+    margin: 0 auto; /* Configuração para centralizar horizontalmente */
+    margin-bottom: 25px;
+    padding: 5px;
+    background-color: #252525;
+    width: 500px;
+    border-radius: 15px;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+}
+
+#imgTopo{
+    width: 165px;
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+
+#containerPrincipal{
+    margin-top: 55px;
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites do contêiner */
+    position: relative; /* Permite posicionar o conteúdo filho (a imagem) em relação ao contêiner */
+}
+
+.card {
+    position: relative;
+    overflow: hidden; /* Certifique-se de que o overflow não interfere na pseudo-elemento */
+}
+
+.animate__pulse {
+    /* Defina os estilos da animação pulse */
+    animation-duration: 0.5s;
+}
+
+.card-body {
+    position: relative; /* Para garantir que o conteúdo do card esteja posicionado corretamente */
+    z-index: 2; /* Certifica-se de que o conteúdo do card está acima da sobreposição */
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Cor preta com baixa opacidade */
+    z-index: 1; /* Certifica-se de que a sobreposição está acima da imagem de fundo */
+}
+
+#item1{
+    background-image: url(/static/imgs/guardaCasamento.jpg);
+    height: 500px;
+    background-size: cover; /* Faz com que a imagem cubra todo o corpo da página */
+    background-position: center; /* Centraliza a imagem no corpo da página */
+}
+
+#item2{
+    background-image: url(/static/imgs/guardaRonda.jpg);
+    height: 500px;
+    background-size: cover; /* Faz com que a imagem cubra todo o corpo da página */
+    background-position: center; /* Centraliza a imagem no corpo da página */
+}
+
+#item3{
+    background-image: url(/static/imgs/guardaCondominio.jpg);
+    height: 500px;
+    background-size: cover; /* Faz com que a imagem cubra todo o corpo da página */
+    background-position: center; /* Centraliza a imagem no corpo da página */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0); /* Cor preta com baixa opacidade */
+    z-index: 1; /* Certifica-se de que a sobreposição está acima da imagem de fundo */
+}
+
+button{
+    width: 100px;
+}
+
+#footer{
+    margin-top: 85px;
+}
+
+#background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+}
