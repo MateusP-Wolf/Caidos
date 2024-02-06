@@ -1,0 +1,42 @@
+body {
+    background-color: #1b1b1b;
+}
+
+#header {
+    background-color: #252525;
+    text-align: center;
+    padding: 5px;
+}
+
+img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Isso faz com que o contêiner ocupe toda a altura da tela */
+}
+
+form {
+    color: whitesmoke;
+    width: 100%;
+    /* Define a largura máxima do formulário */
+    max-width: 400px;
+    /* Define a largura máxima do formulário para evitar que fique muito largo em telas maiores */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.button-container {
+    margin-top: 20px;
+    text-align: center;
+}
